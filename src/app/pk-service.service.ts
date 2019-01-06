@@ -15,7 +15,7 @@ export class PkServiceService {
       "mobile_number": person.name,
       "password": person.age
     }
-    return this.https.post('http://13.127.83.54/association_login/', pks_var).toPromise().then(res => {
+    return this.https.post('login_url', pks_var).toPromise().then(res => {
 console.log(res);
 return res
     })
